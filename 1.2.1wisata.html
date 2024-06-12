@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <link rel="stylesheet" href="1.2.1wisata.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Xplore</title>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <div class="navlogo"><span>X</span>plore</div>
+            <ul class="navlink">
+                <li class="link"><a href="1.1home.html">Home</a></li>
+                <li class="link"><a href="1.2place.html">Place's</a></li>
+                <li class="link"><a href="1.3aboutus.html">About Us</a></li>
+                <li class="link"><a href="1.4contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+            <section class="tempat">
+                <div class="judul">
+                    <h1>Curug Tempuran</h1>
+                </div>
+            <div class="content">
+            <div class="jrk">
+                    <p>Curug Tempuran sebuah wisata air terjun tersembunyi di Purbalingga yang menyajikan suasana alam yang indah dan sejuk, jernihnya air menjadi salah satu daya tarik utamanya. Curug Tempuran atau sekarang bernama Curug Duwur Bumisari, merupakan tempat wisata air terjun yang recommended untuk dikunjungi. Wisata alam di Purbalingga yang satu ini memang terkenal dengan pesona alamnya, apalagi aliran air terjunnya bukan hanya ada satu. Suasana di sekitar Curug Tempuran masih asri, enak untuk dijadikan lokasi hulang-healing. Curug yang masih sangat alami serta kesegaran alamnya masih sangat terjaga dengan baik, sehingga bisa membuat pengunjung nyaman untuk berlama-lama disini.</p>
+                    <img src="wisata1.jpg" id="image" alt="Curug Tempuran">
+            </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m4MchDc7c-g?si=XpC-0l9kZxtFcTC_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.456315001478!2d109.30501397476085!3d-7.302520292705181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ff6ed6871cda3%3A0xcb13f490b5a38c3e!2sCurug%20Tempuran!5e0!3m2!1sid!2sid!4v1717945965157!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="sectioncont footercont">
+                <div class="footercol desc">
+                    <h3>Xplore</h3>
+                    <p>Website Xplore merupakan sebuah platform yang didedikasikan untuk menyediakan informasi mendetail tentang berbagai tempat wisata alam di Purbalingga.</p>
+                    <p>Dengan antarmuka yang user-friendly dan informatif, Xplore menjadi sumber referensi utama bagi para pecinta alam yang ingin merencanakan petualangan mereka berikutnya.</p>
+                </div>
+                <div class="footercol"></div>      
+                <div class="footercol">
+                    <h4>Information</h4>
+                    <a href="1.3aboutus.html"><p>About Us</p></a>
+                    <a href="1.4contactus.html"><p>Contact Us</p></a>
+                </div>
+                <div class="footercol">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.instagram.com/tsanys.st/" target="_blank"><p>Instagram</p></a>
+                    <a href="https://www.linkedin.com/in/m-edwi-tsanystya-r-6938552a7/" target="_blank"><p>Linkedin</p></a>
+                    <a href="https://wa.me/62895386987160" target="_blank"><p>Whatsapp</p></a>
+                </div>
+            </div>
+            <div class="footerbar">
+                Copyright &copy; 2024 Xpolre. All rights reserved. 
+            </div>
+        </footer>
+
+        <script>
+            let image = document.getElementById('image');
+            let images = ['wisata1.jpg','wisata1-2.jpg','wisata1-3.jpg']
+            setInterval(function(){
+                let random = Math.floor(Math.random() * 3);
+                image.src = images[random]
+            }, 1000);
+        </script>
+    </body>
+</html>

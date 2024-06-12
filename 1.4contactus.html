@@ -1,0 +1,95 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <link rel="stylesheet" href="1.4contactus.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Xplore</title>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <div class="navlogo"><span>X</span>plore</div>
+            <ul class="navlink">
+                <li class="link"><a href="1.1home.html">Home</a></li>
+                <li class="link"><a href="1.2place.html">Place's</a></li>
+                <li class="link"><a href="1.3aboutus.html">About Us</a></li>
+                <li class="link"><a href="1.4contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-info">
+      <ul>
+        <li><img src="container6.jpg" alt="Contact Image" width="100"></li>
+        <li>Email: Xplore@gmail.com</li>
+        <li>Phone: (081) 328-568-033</li>
+      </ul>
+    </div>
+    
+    <form id="contactForm">
+      <table>
+        <tr>
+          <td><label for="Name">Nama</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="message">Pesan</label></td>
+          <td><textarea id="message" name="message" rows="4" required></textarea></td>
+        </tr>
+      </table>
+      <button type="submit" onclick="preventDefault()">Submit</button>
+    </form>
+  </div>
+  
+ <footer class="footer">
+            <div class="sectioncont footercont">
+                <div class="footercol desc">
+                    <h3>Xplore</h3>
+                    <p>Website Xplore merupakan sebuah platform yang didedikasikan untuk menyediakan informasi mendetail tentang berbagai tempat wisata alam di Purbalingga.</p>
+                    <p>Dengan antarmuka yang user-friendly dan informatif, Xplore menjadi sumber referensi utama bagi para pecinta alam yang ingin merencanakan petualangan mereka berikutnya.</p>
+                </div>
+                <div class="footercol"></div>      
+                <div class="footercol">
+                    <h4>Information</h4>
+                    <a href="1.3aboutus.html"><p>About Us</p></a>
+                    <a href="1.4contactus.html"><p>Contact Us</p></a>
+                </div>
+                <div class="footercol">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.instagram.com/tsanys.st/" target="_blank"><p>Instagram</p></a>
+                    <a href="https://www.linkedin.com/in/m-edwi-tsanystya-r-6938552a7/" target="_blank"><p>Linkedin</p></a>
+                    <a href="https://wa.me/62895386987160" target="_blank"><p>Whatsapp</p></a>
+                </div>
+            </div>
+            <div class="footerbar">
+                Copyright &copy; 2024 Xpolre. All rights reserved. 
+            </div>
+        </footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      var confirmation = "Nama: " + name + "--" +
+                         "Email: " + email + "--" +
+                         "Pesan: " + message + "--" +
+                         "apakah anda yakin?";
+
+      if (confirm(confirmation)) {
+        alert("Makasih ya, " + name + "!");
+        document.getElementById('contactForm').reset();
+      }
+    });
+  </script>
+
+</body>
+</html>

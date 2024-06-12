@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <link rel="stylesheet" href="1.2.1wisata.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Xplore</title>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <div class="navlogo"><span>X</span>plore</div>
+            <ul class="navlink">
+                <li class="link"><a href="1.1home.html">Home</a></li>
+                <li class="link"><a href="1.2place.html">Place's</a></li>
+                <li class="link"><a href="1.3aboutus.html">About Us</a></li>
+                <li class="link"><a href="1.4contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+            <section class="tempat">
+                <div class="judul">
+                    <h1>Rumah Pohon Igir Wringin</h1>
+                </div>
+            <div class="content">
+            <div class="jrk">
+                    <p>Igir Wringin merupakan bukit di Desa Wisata Panusupan, Kecamatan Rembang, Kabupaten Purbalingga. Akhir 2015, bukit setinggi 640 meter di atas permukaan air laut (mdpl) ini mulai dibuka sebagai destinasi wisata. Tak hanya warga lokal, Bukit Igir Wringin banyak dikunjungi pemburu matahari terbit dari berbagai daerah. Di tempat ini, tersedia bangku tempat Anda bisa melepas lelah dan mengumpulkan tenaga untuk melanjutkan perjalanan. Di pos kedua, terdapat dua jalur. Pilih jalur ke kanan yang menuju puncak Igir Wringin. Perjalanan ke puncak Igir Wringin ditempuh kurang lebih selama 1,5 jam. Di puncak, pengunjung akan disambut semilir angin yang langsung menghilangkan lelah, hamparan perbukitan tampak hijau seperti lukisan.</p>
+                    <img src="" id="image" alt="Curug Tempuran">
+            </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mcOt9kThN_w?si=qh2ZcOzucWYZpAB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7650714324523!2d109.49643077476053!3d-7.26755419273938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ffec1edc3b1f7%3A0x60fb4fae0ebf0217!2sBukit%20Cilik%20-%20Igir%20Wringin!5e0!3m2!1sid!2sid!4v1717949442152!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="sectioncont footercont">
+                <div class="footercol desc">
+                    <h3>Xplore</h3>
+                    <p>Website Xplore merupakan sebuah platform yang didedikasikan untuk menyediakan informasi mendetail tentang berbagai tempat wisata alam di Purbalingga.</p>
+                    <p>Dengan antarmuka yang user-friendly dan informatif, Xplore menjadi sumber referensi utama bagi para pecinta alam yang ingin merencanakan petualangan mereka berikutnya.</p>
+                </div>
+                <div class="footercol"></div>      
+                <div class="footercol">
+                    <h4>Information</h4>
+                    <a href="1.3aboutus.html"><p>About Us</p></a>
+                    <a href="1.4contactus.html"><p>Contact Us</p></a>
+                </div>
+                <div class="footercol">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.instagram.com/tsanys.st/" target="_blank"><p>Instagram</p></a>
+                    <a href="https://www.linkedin.com/in/m-edwi-tsanystya-r-6938552a7/" target="_blank"><p>Linkedin</p></a>
+                    <a href="https://wa.me/62895386987160" target="_blank"><p>Whatsapp</p></a>
+                </div>
+            </div>
+            <div class="footerbar">
+                Copyright &copy; 2024 Xpolre. All rights reserved. 
+            </div>
+        </footer>
+
+        <script>
+            let image = document.getElementById('image');
+            let images = ['wisata2.jpg','wisata2-2.jpg','wisata2-3.jpg']
+            setInterval(function(){
+                let random = Math.floor(Math.random() * 3);
+                image.src = images[random]
+            }, 1000);
+        </script>
+    </body>
+</html>
