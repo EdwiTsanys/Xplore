@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-sclae=1.0">
         <link rel="stylesheet" href="2.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <title>Xplore</title>
     </head>
     <body>
@@ -30,10 +31,11 @@
     </section>
 
         <section class="populer">
-            <div class="secthead">
+            <div class="secthead" data-aos="zoom-out-up">
                 <h2>Wisata Terpopuler</h2>
             </div>
-            <div class="populergrid">
+            <div class="populergrid" data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="populercard">
                     <a href="1.2.1wisata.html"><img src="wisata1.jpg" alt="wisata terpopuler"></a>
                     <div class="popcont">
@@ -115,5 +117,8 @@
                 Copyright &copy; 2024 Xpolre. All rights reserved. 
             </div>
         </footer>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
